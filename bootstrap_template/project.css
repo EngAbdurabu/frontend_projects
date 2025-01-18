@@ -1,0 +1,386 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;500;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+/* import and bisac for and design in the start */
+*{
+    font-family:cairo;
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    scroll-behavior: smooth;
+}
+/* Start  header  section */
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding:0px 100px;/*the first number for top and buttom and the second number for right and lift*/
+    color:whitesmoke;
+    border-top:crimson solid 2px;
+    position:fixed;
+    width:100%;
+    height:40px;
+    z-index: 100;
+}
+header:hover{
+    border-top:#1ABC9C solid 3px;
+
+}
+
+
+header a{
+    color:whitesmoke;
+    text-decoration: none;
+    margin-right:10px;
+    transition:ease 1s;/*مدة التاثير ب الثانية */
+    font-size:16px;
+
+}
+header a:hover{
+    color:#1ABC9C;
+    font-size:22px;
+}
+/* End header  section */
+/* start carsour section */
+.carsour{
+    height: 100vh;/* يعني ياخذ 100% من عرض الشاشة مهما كان نوعها */
+    background-image: url(image/home.jpg);
+    background-size:cover;
+    background-attachment:fixed;/* يخلي الصورة تكون ثابتة و العناصر الاخرى تتحرك */
+    display:flex;
+    align-items: center;
+    color:white;
+    padding-left: 80px;
+    background-blend-mode:overlay; /* طبقة تكون فوق الخلفية */
+    background-color: rgba(0, 0, 0, 0.4);
+    background-position: center;
+
+}
+.carsour a{
+    color:white;
+    text-decoration: none;
+    background-color: #1ABC9C;
+    text-align: center;
+    padding:10px;
+    border-radius: 10px;
+    font-size: 18pt;
+    display: inline-block;
+    margin-top:15px;
+    transition:ease 1s;
+
+
+}
+.carsour a:hover{
+    background-color: #2c3e50;
+    font-size:20pt;
+
+}
+.carsour span{
+    color:crimson;
+}
+.carsour h2{
+    color:#2c3e50;
+    font-size:30pt;
+
+}
+.carsour p{
+    font-size:16pt;
+}
+/* End carsour section */
+/* Start  services  section */
+.services h2{
+    text-align: center;
+    margin:30px 0px;
+
+}
+.services .container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding:0px 80px;
+
+
+
+}
+.services .card{
+    margin-right: 20px;
+    box-shadow: 3px 3px 6px 6px #ccc;
+    /* الرقم الاول يعبر عن مقدار الظل الذي يخرج عن الاطار الى
+    جهه اليمين و الرقم الثاني يعبر عن مقدار الظل الذي يخرج
+    عن الاطار الى الجهه السفلية و الرقم الثالثة يعبر عن شفافية
+    الظلال وكل ما زاد الرقم زد مقدار الشفافية  و الرقم الرابع يعبر
+    عن حجم الظلال حل الاطار كاملاََ
+    */
+    padding:10px;
+    width:16em;
+    margin-bottom:40px;
+    text-align: center;
+
+}
+.card h3{
+    color:crimson;
+    font-weight: 1000;
+}
+.card p{
+    font-size:14px;
+}
+.services .card>div{
+    font-size:50pt;
+    color:#2c3e50
+}
+/* End services  section */
+/* Start protofilio section */
+.protofilio{
+    background-color: #2c3e50;
+    padding:20px 80px;
+    text-align: center;
+
+}
+.protofilio h2{
+    color:white;
+    margin-bottom: 40px;
+    border-bottom: solid crimson;
+    display: inline-block; /*يخلي الخط ينعرض فقط تحت الكلام */
+}
+
+.protofilio .container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.protofilio .card{
+    background-color: white;
+    border: solid black;
+    margin-right: 20px;
+    border-radius: 20px;
+    width: 16em;
+    margin-bottom: 30px;
+    overflow: hidden;
+    min-height: 250px;
+
+
+}
+.protofilio img{
+    height: 12em;
+    width:100%;
+    object-fit: cover;
+}
+.protofilio .card-disc{
+    margin: 0px 10px;
+
+}
+.protofilio button{
+    color:white;
+    background-color: #1ABC9C;
+    border-radius:15px;
+    border:none;
+    padding:3px 8px;
+    margin-top: 10px;
+    transition:1s ease;
+
+}
+.protofilio button:hover{
+    transform:scale(1.2);
+}
+.protofilio .card-disc p{
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 800;
+}
+.protofilio .card-disc button{
+
+    align-self: end;
+    margin-left: 10px;
+    font-weight: 800;
+}
+
+/* End profilio section */
+/* Start Course Section  */
+.course{
+    text-align: center;
+    padding:50px 100px ;
+    display: flex;
+    align-items: center;
+
+}
+.course h2{
+    text-align: center;
+    color:crimson;
+    margin-bottom: 20px;
+}
+ .course .course-desc p{
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 500;
+    text-align: center;
+    padding:0px 30px;
+
+}
+.course .course-desc{
+    width:60%;
+    text-align: center;
+    font-size:25px;
+
+}
+.course .course-img{
+    width:40%;
+    margin-right: 30px ;
+    border-radius: 15px;
+    overflow:hidden;
+    box-shadow:2px 2px 2px 2px rgb(0 0 0 /40%);
+}
+.course .course-img img{
+    width:100%;
+}
+/* End Course Section */
+/* Start Developer Section */
+.developer{
+    min-height:80vh;
+    background-image:url(image/banner.jpg);
+    background-size:cover;
+    background-blend-mode:overlay;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-attachment: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-position: center; 
+    padding: 50px;
+}
+.developer .images img{
+    border:#d6dadf solid;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+    border-radius: 50%;
+    width:20em;
+    height:20em;
+
+}
+/* End Developer Section */
+/* Start footer */
+footer{
+    background-color: #2c3e50;
+    padding:50px;
+    text-align: center;
+    color:white;
+}
+/* End footer */ 
+.up{
+    display:flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: crimson;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom:30px;
+    right:25px;
+}
+.up:hover{
+    background-color: #1ABC9C;
+}
+.contect{
+    padding: 100px;
+    text-align: center;
+    background: rgb(26,188,156);
+background: linear-gradient(0deg, rgba(26,188,156,0.9252336448598131) 13%, rgba(44,62,80,0.9579439252336449) 67%);
+}
+.contect h2{
+    color:white;
+    margin-bottom: 30px;
+    border-bottom: white solid;
+    display:inline-block;
+    
+}
+.input-form{
+    margin-right:10px;
+    margin-bottom: 10px;
+    position: relative;
+    width:100%;
+}
+.input-form input{
+    border:none;
+    border-bottom: solid #1ABC9C;
+    outline: none;
+    padding: 2px 10px;
+    width: 100%;
+    height: 40px;
+}
+.input-form label{
+    font-size: 12px;
+    position:absolute;
+    top:50%;
+    left:5px;
+    transform:translateY(-50%);
+    transition:all 1s;
+    pointer-events: none;
+
+}
+.input-form input:hover~label 
+ /* يعني عندما اضغط على الانبت يظهر التاثير في اليبل */
+    ,.input-form input:valid~label
+{
+    top:10%;
+    transform:translateY(-40%);
+}
+.contect .container_1{
+    display:flex;
+}
+.contect .container_2{
+    display:flex;
+}
+.contect input[type=submit]{
+    background-color:#2c3e50;
+    color:aliceblue;
+    padding:5px 30px;
+    border-radius:15px;
+    border:none;
+}
+.contect input[type=submit]:hover{
+    transform:scale(1.2);
+    transition: all 1s;
+    background-color: #1ABC9C;
+    font-size: 20px;
+}
+/* .map{
+    padding: 100px;
+    display:flex;
+    justify-content: center; 
+}
+.map div{
+    width: 100%;
+    box-shadow: 0 10px 35px 0px lightblue !important;
+    padding: 20px;
+    
+}
+.map iframe{
+    width: 100%;
+    
+} */
+/* Start Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+ }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: crimson; 
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1ABC9C; 
+  }
+/* End Scrollbar */

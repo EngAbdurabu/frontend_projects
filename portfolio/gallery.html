@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="موقع شخصي للمهندس : عبدربه محمد">
+    <meta name="author" content="عبدربه محمد ">
+    <title> الموقع الشخصي  </title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <!-- online icon website -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<body>
+    <main>
+        <section id="header">
+            <!-- site logo-->
+            <div id="branding" style="flex-grow: 8"> <!-- اخترنا هذا الستايل لكي يكون اكبر من العناصر الاخرى ب ثمن مرات -->
+                <h1><a href="index.html"><i class="fa fa-user-circle"></i> صفحة
+                <sapn class="highlight">عبدربه محمد </sapn></a></h1>
+            </div>
+
+            <!-- navgation bar -->
+            <nav>
+                <ul>
+                    <li><a href="index.html"> الرئيسية</a></li>
+                    <li class="current"><a href="gallery.html"> معرض الأعمال </a></li>
+                </ul>
+            </nav>
+
+        </section>
+
+        <section id="slider">
+            <div id="wrapper">
+                <div class="content">
+                    <img src="image/1.PNG" alt="الصورة غير موجودة حالياً">
+                </div>
+                <div class="content">
+                    <img src="image/2.PNG" alt="الصورة غير موجودة حالياً">
+                </div>
+                <div class="content">
+                    <img src="image/3.PNG" alt="الصورة غير موجودة حالياً">
+                </div>
+                <div class="content">
+                    <img src="image/4.PNG" alt="الصورة غير موجودة حالياً">
+                </div>
+            </div>
+            
+            <div id="navlinks"><!-- navgation button-->
+                <ul>
+                    <li class="itemLinks" data-pos="0"></li>
+                    <li class="itemLinks" data-pos="1"></li>
+                    <li class="itemLinks" data-pos="2"></li>
+                    <li class="itemLinks" data-pos="3"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="footer">
+            <p>الصفحة الشخصية : للمهندس عبدربه محمد  &copy;<span id="currentYear"></span></p>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
