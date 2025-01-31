@@ -41,6 +41,56 @@ header a:hover{
     color:#1ABC9C;
     font-size:22px;
 }
+/* التنسيقات الأساسية */
+nav {
+    position: relative;
+    padding: 15px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* زر المنيو للموبايل */
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* إخفاء الـ checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* التنسيقات للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #2c3e50;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    /* إظهار القائمة عند تفعيل الـ checkbox */
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+    
+    .nav-links a {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+}
 /* End header  section */
 /* start carsour section */
 .carsour{
